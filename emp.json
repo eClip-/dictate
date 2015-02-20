@@ -1,0 +1,37 @@
+{
+  "name": {
+    "de": "Diktat",
+    "en": "Dictate"
+  },
+  "slug": "youtube-video",
+  "version": "x.y.z",
+  "description": {
+    "de": "Einfaches Diktat-Modul",
+    "en": "Simple Dictate Module"
+  },
+  "contributors": [
+    {
+      "name": "Maik Hummel",
+      "email": "maik@eclip.io"
+    },
+    {
+      "name": "Nico Axtmann",
+      "email": "nico@eclip.io"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eClip-/youtube.git"
+  },
+  "keywords": {
+    "de": [
+      "diktat",
+      "sprache"
+    ],
+    "en": [
+      "dictate",
+      "language"
+    ]
+  },
+  "author": "Maik Hummel <maik@eclip.io>"
+}
