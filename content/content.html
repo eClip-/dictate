@@ -2,7 +2,7 @@
 <link rel="import" href="//emp.eclip.io/core-icon/core-icon.html">
 <link rel="import" href="//emp.eclip.io/speech-mic/speech-mic.html">
 
-<polymer-element name="eclip-dictate">
+<polymer-element name="eclip-dictate" noscript>
 
   <template>
     <style>
@@ -41,12 +41,6 @@
     <core-card id="core_card" layout="" vertical="">{{ $.mic.completeTranscript }}</core-card>
     <speech-mic language="de_DE" id="mic"></speech-mic>
   </template>
-
-  <script>
-
-    Polymer();
-
-  </script>
 
 </polymer-element>
 
