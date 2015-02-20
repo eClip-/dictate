@@ -20,19 +20,21 @@
                 width: 256px;
                 height: 256px;
                 position: relative;
-                left: -40px;
+                left: -30px;
                 top: -55px;
             }
 
             #core_card {
-                width: 50%;
+                width: 60%;
                 height: 200px;
                 display: inline-block;
                 border-radius: 2px;
-                box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
                 position: relative;
                 background-color: rgb(255, 255, 255);
                 top: 30px;
+                padding: 2%;
+                text-align: justify;
             }
 
             .iblock {
@@ -42,6 +44,12 @@
 
             #dictate_container {
                 margin: 0 auto;
+            }
+
+            @media (max-width: 767px) {
+                #core_card {
+                    width: 90%;
+                }
             }
         </style>
         <div id="dictate_container">
