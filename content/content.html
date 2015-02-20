@@ -2,6 +2,8 @@
 <link rel="import" href="//emp.eclip.io/core-icon/core-icon.html">
 <link rel="import" href="//emp.eclip.io/speech-mic/speech-mic.html">
 
+{{settings.test}}
+
 <polymer-element name="eclip-dictate" noscript>
 
     <template>
@@ -50,9 +52,14 @@
                 #core_card {
                     width: 90%;
                 }
+                #core_icon {
+                    top: 0;
+                    left: 0;
+                }
             }
         </style>
         <div id="dictate_container">
+            {{settings.test}}
             <core-card id="core_card" layout="" vertical="">{{ $.mic.completeTranscript }}</core-card>
             <div class="iblock">
                 <speech-mic language="de_DE" id="mic"></speech-mic>
