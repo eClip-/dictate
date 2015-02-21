@@ -4,7 +4,7 @@
 
 {{settings.test}}
 
-<polymer-element name="eclip-dictate" noscript>
+<polymer-element name="eclip-dictate">
 
     <template>
         <style>
@@ -59,8 +59,11 @@
             }
         </style>
         <div id="dictate_container">
-            {{settings.test}}
-            <core-card id="core_card" layout="" vertical="">{{ $.mic.completeTranscript }}</core-card>
+            Test: {{settings.test}}
+
+            Question: {{settings.question}}
+
+            <core-card id="core_card" on-click="{{setFlag}}" layout="" vertical="">{{ $.mic.completeTranscript }}</core-card>
             <div class="iblock">
                 <speech-mic language="de_DE" id="mic"></speech-mic>
                 <br/>
@@ -68,6 +71,15 @@
             </div>
         </div>
     </template>
+
+    <script>
+        Polymer('eclip-dictate', {
+            ready: function () {
+                this.settings = $scope.settings;
+            },
+            setFlag: setFlag
+        });
+    </script>
 
 </polymer-element>
 
