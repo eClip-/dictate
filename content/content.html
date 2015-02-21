@@ -2,10 +2,6 @@
 <link rel="import" ng-href="{{config.polymer_assets_url}}/core-icon/core-icon.html">
 <link rel="import" ng-href="{{config.polymer_assets_url}}/speech-mic/speech-mic.html">
 
-Base-URL: {{base_url}}
-
-{{settings.test}}
-
 <polymer-element name="eclip-dictate" ng-init="initPolymer()">
 
     <template>
@@ -29,7 +25,7 @@ Base-URL: {{base_url}}
             }
 
             #core_card {
-                width: 60%;
+                width: 55%;
                 height: 200px;
                 display: inline-block;
                 border-radius: 2px;
@@ -61,13 +57,9 @@ Base-URL: {{base_url}}
             }
         </style>
         <div id="dictate_container">
-            Test: {{settings.test}}
-
-            Question: {{settings.question}}
-
             <core-card id="core_card" on-click="{{setFlag}}" layout="" vertical="">{{ $.mic.completeTranscript }}</core-card>
             <div class="iblock">
-                <speech-mic language="de_DE" id="mic"></speech-mic>
+                <speech-mic language="{{settings.language}}" id="mic"></speech-mic>
                 <br/>
                 <core-icon icon="category-images:science" id="core_icon" designmeta="topeka-image"></core-icon>
             </div>
