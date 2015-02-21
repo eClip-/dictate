@@ -1,6 +1,8 @@
-<link rel="import" href="//emp.eclip.io/topeka-elements/category-images.html">
-<link rel="import" href="//emp.eclip.io/core-icon/core-icon.html">
-<link rel="import" href="//emp.eclip.io/speech-mic/speech-mic.html">
+<link rel="import" href="{{config.polymer_assets_url}}/topeka-elements/category-images.html">
+<link rel="import" href="{{config.polymer_assets_url}}/core-icon/core-icon.html">
+<link rel="import" href="{{config.polymer_assets_url}}/speech-mic/speech-mic.html">
+
+Base-URL: {{base_url}}
 
 {{settings.test}}
 
@@ -73,11 +75,12 @@
     </template>
 
     <script>
+        console.log(angular.element(this).scope());
         Polymer('eclip-dictate', {
-            ready: function () {
+            /*ready: function () {
                 this.settings = $scope.settings;
             },
-            setFlag: $scope.setFlag
+            setFlag: $scope.setFlag*/
         });
     </script>
 
