@@ -1,3 +1,4 @@
+$scope.test = 'Little test';
 $scope.supportedLangs = [
     'af-ZA',
     'id-ID',

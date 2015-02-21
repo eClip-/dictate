@@ -1,3 +1,4 @@
+<h1>{{test}}</h1>
 <div class="form-group">
     <label class="col-sm-2 control-label" for="language">{{__('language')}}</label>
 
@@ -5,6 +6,9 @@
         <select ui-jq="chosen" id="language"
                 ng-model="settings.language"
                 ng-repeat="lang in supportedLangs">
+            <option value="{{lang}}">{{lang}}</option>
+        </select>
+        <select ng-repeat="lang in supportedLangs">
             <option value="{{lang}}">{{lang}}</option>
         </select>
         <span class="help-block m-b-none" ng-bind-html="__('language_info')"></span>
