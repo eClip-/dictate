@@ -24,7 +24,7 @@
                 top: -55px;
             }
 
-            #core_card {
+            #output {
                 width: 55%;
                 height: 200px;
                 display: inline-block;
@@ -57,7 +57,7 @@
             }
         </style>
         <div id="dictate_container">
-            <core-card id="core_card" on-click="{{setFlag}}" layout="" vertical="">{{ $.mic.completeTranscript }}</core-card>
+            <div id="output">{{ $.mic.completeTranscript }}</div>
             <div class="iblock">
                 <speech-mic language="{{settings.language}}" id="mic"></speech-mic>
                 <br/>
