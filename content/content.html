@@ -1,6 +1,6 @@
-<link rel="import" href="{{config.polymer_assets_url}}/topeka-elements/category-images.html">
-<link rel="import" href="{{config.polymer_assets_url}}/core-icon/core-icon.html">
-<link rel="import" href="{{config.polymer_assets_url}}/speech-mic/speech-mic.html">
+<link rel="import" ng-href="{{config.polymer_assets_url}}/topeka-elements/category-images.html">
+<link rel="import" ng-href="{{config.polymer_assets_url}}/core-icon/core-icon.html">
+<link rel="import" ng-href="{{config.polymer_assets_url}}/speech-mic/speech-mic.html">
 
 Base-URL: {{base_url}}
 
@@ -73,16 +73,6 @@ Base-URL: {{base_url}}
             </div>
         </div>
     </template>
-
-    <script>
-        console.log(angular.element(this).scope());
-        Polymer('eclip-dictate', {
-            /*ready: function () {
-                this.settings = $scope.settings;
-            },
-            setFlag: $scope.setFlag*/
-        });
-    </script>
 
 </polymer-element>
 
