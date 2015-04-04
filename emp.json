@@ -3,8 +3,8 @@
     "de": "Diktat",
     "en": "Dictate"
   },
-  "slug": "youtube-video",
-  "version": "x.y.z",
+  "slug": "dictate",
+  "version": "0.0.1-alpha.1",
   "description": {
     "de": "Einfaches Diktat-Modul",
     "en": "Simple Dictate Module"
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/eClip-/youtube.git"
+    "url": "https://github.com/eClip-/dictate.git"
   },
   "keywords": {
     "de": [

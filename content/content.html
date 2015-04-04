@@ -12,7 +12,7 @@
             }
 
             #mic {
-                position: relative;
+                position: absolute;
                 z-index: 42;
             }
 
@@ -43,7 +43,7 @@
             }
 
             #dictate_container {
-                margin: 0 auto;
+                margin: 0px auto 70px auto;
             }
 
             @media (max-width: 767px) {
@@ -57,7 +57,7 @@
             }
         </style>
         <div id="dictate_container">
-            <div id="output">{{ $.mic.completeTranscript }}</div>
+            <div id="output">&nbsp;{{ $.mic.completeTranscript }}</div>
             <div class="iblock">
                 <speech-mic language="{{settings.language}}" id="mic"></speech-mic>
                 <br/>
